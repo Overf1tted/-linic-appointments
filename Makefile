@@ -1,7 +1,7 @@
 .PHONY: lint test
 
 lint:
-	black . && isort . && flake8 .
+	black **/*.py && isort **/*.py && flake8 .
 
 test:
 	pytest
