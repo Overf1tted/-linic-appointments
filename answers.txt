@@ -1,0 +1,10 @@
+Самооценка 0-10
+Python: 8
+FastAPI: 7
+Docker/Compose: 7
+GitHub Actions: 6
+SQL: 7
+Код с ИИ: 8
+Интеграция в бизнес-процессы: 7
+Английский: Yes
+Как трекаете задачи: Kanban (Notion / GitHub Projects)
