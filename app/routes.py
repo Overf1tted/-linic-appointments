@@ -16,7 +16,11 @@ def get_db():
 def create(appointment: schemas.AppointmentCreate, db: Session = Depends(get_db)):
     return crud.create_appointment(db, appointment)
 
-@router.get("/appointments/{appointment_id}", response_model=schemas.AppointmentOut)
+@router.get(
+    "/appointments/{appointment_id}",
+    response_model=schemas.Appointment
+)
+
 def read(appointment_id: int, db: Session = Depends(get_db)):
     db_appointment = crud.get_appointment(db, appointment_id)
     if db_appointment is None:
