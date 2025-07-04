@@ -25,10 +25,9 @@ def create_appointment(
 ):
     return crud.create_appointment(db, appointment)
 
-
 @router.get(
     "/appointments/{appointment_id}",
-    response_model=schemas.Appointment,
+    response_model=schemas.AppointmentOut,
     summary="Получить запись по ID"
 )
 def read_appointment(
