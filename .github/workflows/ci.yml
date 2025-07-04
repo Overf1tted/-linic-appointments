@@ -34,12 +34,13 @@ jobs:
       with:
         python-version: '3.12'
 
-    - name: Установка зависимостей
+    - name: Install dependencies
       run: |
         python -m pip install --upgrade pip
         pip install -r requirements.txt
+        pip install black isort flake8
 
-    - name: линтер (black, flake8, isort)
+    - name: Линтер (black, flake8, isort)
       run: make lint
 
     - name: тесты
